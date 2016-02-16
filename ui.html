@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blog Ui Html</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/design.css" />
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- frist thing first -->
+		<section class="addnewpost">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1 navbar">
+						<ul>
+							<li><a href="#"><img src="img/1.png" alt="navbar-image"></a></li>
+							<li><a href="#"><img src="img/2.png" alt="navbar-image"></a></li>
+							<li><a href="#"><img src="img/3.png" alt="navbar-image"></a></li>
+							<li><a href="#"><img src="img/4.png" alt="navbar-image"></a></li>
+							<li><a href="#"><img src="img/5.png" alt="navbar-image"></a></li>
+						</ul>
+					</div>
+					<div class="col-md-11">
+						<div class="block">
+							<h2>Add New Post</h2>
+							<form action="" method="POST">
+								<input class="myinput" type="text" placeholder="Enter Title Here"><br><br>
+								<div class="pagination">
+									<ul>
+										<li><a href="#"><img src="img/s1.png" alt="s1"></a></li>
+										<li><a href="#"><img src="img/s2.png" alt="s2"></a></li>
+										<li><a href="#"><img src="img/s3.png" alt="s3"></a></li>
+										<li><a href="#"><img src="img/s4.png" alt="s4"></a></li>
+										<li><a href="#"><img src="img/s5.png" alt="s5"></a></li>
+										<li><a href="#"><img src="img/s6.png" alt="s6"></a></li>
+									</ul>
+								</div>
+								<textarea class="myinput textarea" type="text"></textarea>
+							</form>
+						</div>
+						<br>
+						<button id="savemydraft" class="btn btn-default">SAVE DRAFT</button>
+						<button class="btn btn-default">PREVIEW</button>
+						<button class="btn btn-primary">PUBLISH</button>
+					</div>
+				</div>
+			</div>	
+		</section>	
+		<br><br>
+		<!-- related post thing -->
+		<section class="relatedpost">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 postblock">
+						<div class="title">
+							<h3>Related Posts</h3>
+						</div>
+
+						<!-- post start here -->
+						<div class="post">
+							<div class="row">
+								<div class="col-md-11 para">
+									<p>
+										Philosophy cannot be taught; it is the application of the sciences to truth
+									</p>
+									<p class="excerpt">by Lord Wilmore</p>
+								</div>
+								<div class="col-md-1 check">
+									<input class="thebox" type="checkbox">
+								</div>
+							</div>
+						</div>
+						<div class="post">
+							<div class="row">
+								<div class="col-md-11 para">
+									<p>
+										Philosophy cannot be taught; it is the application of the sciences to truth
+									</p>
+									<p class="excerpt">by Lord Wilmore</p>
+								</div>
+								<div class="col-md-1 check">
+									<input class="thebox" type="checkbox">
+								</div>
+							</div>
+						</div>
+						<div class="post">
+							<div class="row">
+								<div class="col-md-11 para">
+									<p>
+										Philosophy cannot be taught; it is the application of the sciences to truth
+									</p>
+									<p class="excerpt">by Lord Wilmore</p>
+								</div>
+								<div class="col-md-1 check">
+									<input class="thebox" type="checkbox">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#savemydraft").click(function(){
+					$(".block").slideToggle('slow');
+				});
+			});	
+		</script>
+	</body>
+</html>
